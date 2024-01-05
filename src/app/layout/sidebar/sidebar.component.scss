@@ -20,6 +20,7 @@
             li {
                 padding: 12px;
                 cursor: pointer;
+                margin-bottom: 5px;
                 a {
                     text-decoration: none;
                     color: $white;
@@ -27,7 +28,7 @@
                         margin-right: 14px;
                     }
                 }
-                &:hover {
+                &.active, &:hover {
                     border-radius: 6px;
                     background: linear-gradient(270deg, #323337 50%, rgba(70, 79, 111, 0.50) 100%);
                     a {
@@ -36,6 +37,23 @@
                         }
                     }
                 }
+                &.new-chat {
+                    border-radius: 6px;
+                    background: linear-gradient(270deg, rgba(50, 51, 55, 0.32) 50%, rgba(70, 79, 111, 0.16) 100%);
+                    &:hover {
+                        border-radius: 6px;
+                        background: linear-gradient(270deg, #323337 50%, rgba(70, 79, 111, 0.50) 100%);
+                    }
+                }
+            }
+            .router-mini-head {
+                color: #E8ECEF;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 12px;
+                margin-top: 24px;
+                margin-bottom: 8px;
             }
         }
     }

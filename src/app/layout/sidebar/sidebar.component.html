@@ -6,7 +6,44 @@
     <div class="navigations">
         <ul>
             @for (route of routes; track $index) {
-                <li>
+                <li routerLinkActive="active">
+                    <a [routerLink]="[route.path]">
+                        <i [class]="route.icon"></i>
+                        <span>{{route.name}}</span>
+                    </a>
+                </li>
+            }
+
+            <li class="new-chat mt-5">
+                <a>
+                    <i class="bi bi-plus-lg"></i>
+                    <span>New Chat</span>
+                </a>
+            </li>
+
+            <p class="router-mini-head">Yesterday</p>
+            @for (route of yesterdayRoutes; track $index) {
+                <li routerLinkActive="active">
+                    <a [routerLink]="[route.path]">
+                        <i [class]="route.icon"></i>
+                        <span>{{route.name}}</span>
+                    </a>
+                </li>
+            }
+
+            <p class="router-mini-head">Previous 7 Days</p>
+            @for (route of previousSevenRoutes; track $index) {
+                <li routerLinkActive="active">
+                    <a [routerLink]="[route.path]">
+                        <i [class]="route.icon"></i>
+                        <span>{{route.name}}</span>
+                    </a>
+                </li>
+            }
+
+            <p class="router-mini-head">Previous 30 Days</p>
+            @for (route of previousThirtyRoutes; track $index) {
+                <li routerLinkActive="active">
                     <a [routerLink]="[route.path]">
                         <i [class]="route.icon"></i>
                         <span>{{route.name}}</span>
@@ -15,4 +52,7 @@
             }
         </ul>
     </div>
+
+
+
 </div>
