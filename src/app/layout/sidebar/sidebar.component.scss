@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+.sidebar-inner {
+    height: 100vh;
+    overflow-y: auto;
+    background: $dark;
+    color: $white;
+    .logo {
+        padding: 34px 28px;
+        img {
+            width: 51.579px;
+            height: 48px;
+        }
+    }
+    .navigations {
+        ul {
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0 16px;
+            li {
+                padding: 12px;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    i {
+                        margin-right: 14px;
+                    }
+                }
+                &:hover {
+                    border-radius: 6px;
+                    background: linear-gradient(270deg, #323337 50%, rgba(70, 79, 111, 0.50) 100%);
+                    a {
+                        i {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
