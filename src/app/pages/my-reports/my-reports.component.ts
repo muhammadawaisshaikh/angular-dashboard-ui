@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ChartWidgetComponent } from '../../components/chart-widget/chart-widget.component';
 
 @Component({
   selector: 'app-my-reports',
   standalone: true,
-  imports: [],
+  imports: [ChartWidgetComponent],
   templateUrl: './my-reports.component.html',
   styleUrl: './my-reports.component.scss'
 })

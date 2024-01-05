@@ -1,1 +1,28 @@
-<p>chart-widget works!</p>
+<div class="card">
+    <div class="card-body">
+        <div class="row px-3">
+            <div class="col-7">
+                <p class="py-2 mb-0"><strong>{{title}}</strong></p>
+            </div>
+            <div class="col-5 d-flex">
+                <select class="form-control" [(ngModel)]="cycle">
+                    @for (item of items; track $index) {
+                        <option [value]="item.value">{{ item.label }}</option>
+                    }
+                    </select>
+                <button class="dots-btn ms-2">
+                    <i class="bi bi-three-dots"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row pt-4">
+            @if (chartType == '1') {
+                <app-expenses-chart></app-expenses-chart>
+            }
+            
+            @if (chartType == '2') {
+                <app-sales-comparision-chart></app-sales-comparision-chart>
+            }
+        </div>
+    </div>
+</div>
