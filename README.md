@@ -2,6 +2,9 @@
 
 This wow dashboard built with angular 17 ecosystem was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
+![Angular Dashboard v17](https://github.com/muhammadawaisshaikh/angular-dashboard-ui/assets/24633059/d343d95c-b3f3-4fb0-8c70-6e8d63d3cdd5)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
